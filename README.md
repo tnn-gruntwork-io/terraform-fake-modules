@@ -6,14 +6,14 @@ A collection of "fake" Terraform modules that authenticate to Amazon Web Service
 For a fake AWS Virtual Private Cloud (VPC):
 ```
 module "vpc" {
-  source = "git@github.com:gruntwork-io/terraform-fake-modules.git//modules/aws/vpc?ref=main"
+  source = "git@github.com:tnn-gruntwork-io/terraform-fake-modules.git//modules/aws/vpc?ref=main"
 }
 ```
 
 For a fake AWS Elastic Kubernetes Service (EKS) cluster:
 ```
 module "eks" {
-  source = "git@github.com:gruntwork-io/terraform-fake-modules.git//modules/aws/eks?ref=main"
+  source = "git@github.com:tnn-gruntwork-io/terraform-fake-modules.git//modules/aws/eks?ref=main"
 
   vpc_id = module.vpc.id
 }
